@@ -34,7 +34,7 @@ public class UserController {
         return "create-user";
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<?> createUser(@RequestBody CreateUserRequest request) {
 
         User user = new User();
